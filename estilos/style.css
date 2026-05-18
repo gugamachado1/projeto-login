@@ -31,6 +31,13 @@ main {
     transform: translate(-50%, -50%)
 }
 
+div#imagem {
+    background: black url(../imagens/imagem-predio.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
 div#formulario {
     text-align: center;
     padding: 20px;
@@ -38,6 +45,7 @@ div#formulario {
 
 div#formulario > h1 {
     margin: 15px 0px;
+    color: #000000;
 }
 
 div#formulario > p {
@@ -51,7 +59,7 @@ div.campo {
 div.campo > input {
     background-color: white;
 
-    border: 2px solid #2b6fff;
+    border: 2px solid #7c7c7c;
     border-radius: 5px;
     padding: 10px 5px;
     margin: auto;
