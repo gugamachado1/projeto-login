@@ -12,35 +12,45 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-color: #000752 ;
+body, html {
+    background-color: #000752;
+    height: 100vh;
+    width: 100vw;
 }
 
 main {
-    background-color: white;
-    border-radius: 10px;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
 
-    /*Centralização horizontal*/
-    width: 60vw;
-    margin: auto;
-
-    /*Centralização vertical*/
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.43);
+
+    width: 300px;
+    height: 600px;
+
+    overflow: hidden;
 }
 
-div#imagem {
-    background: black url(../imagens/imagem-predio.jpg) no-repeat;
+section#login > div#imagem {
+    background: black url(../imagens/imagem-predio.jpg) no-repeat left center;
     background-size: cover;
     height: 200px;
-    border-radius: 10px 10px 0px 0px;
+    display: block;
 }
 
-div#formulario {
+section#login > div#formulario {
     text-align: center;
     padding: 20px;
+    display: block;
 }
 
 div#formulario > h1 {
